@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Animacion CSS Contacto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- mi hoja de estilos -->
+    <link rel="stylesheet" href="contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <div class="contacto-container">
+        <h1 class="logo">Contactame </h1>
+        <div class="contacto-grid">
+            <div class="formulario">
+                 <h3>contactame</h3>
+                <form action="">
+                    <p>
+                        <label for="nombre">nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </p>
+                    <p>
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+                    <p>
+                        <label for="phone">Telefono</label>
+                        <input type="tel" id="phone" name="phone"
+                                pattern="[0-9]{3}-[0-9]{1}-[0-9]{6}">
+                    </p>
+                    <p>
+                        <label for="asunto">Asunto</label>
+                        <input type="text" name="asunto">
+
+                    </p>
+                    <p class="block">
+                        <label for="consulta">Consulta</label>
+                        <textarea name="consulta" id="consulta" rows="5"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">
+                            Enviar 
+                        </button>
+                    </p>
+                </form>
+                </div>
+            <div class="info">
+                <h4>Mas info</h4> 
+                <ul>
+                    <li> <i class="bi bi-whatsapp"></i> Whatsapp</li>
+                    <li> <i class="bi bi-envelope"></i> Correo</li>
+                    <li> <i class="bi bi-instagram"></i> instagram</li>
+                </ul>
+                <p>Por cualquier tipo de consulta puede hacerlo a traves del formulario o a traves de las redes sociales</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
