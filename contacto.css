@@ -17,7 +17,7 @@ body{
 .logo{
     text-align: center; 
     font-size: 3em;
-    color: #88d8b0; 
+    color:aliceblue; 
 }
 .contacto-grid{
     box-shadow: 0 0 20px 0 rgba( 000, 000, 000, 0.3);
@@ -29,7 +29,9 @@ body{
 .formulario{
     background: #ffeead;
 }
-
+.formulario h3{
+    margin-left: 1em;
+}
 .formulario form{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -75,17 +77,18 @@ body{
     background: #88d8b0;
  }
  .info h4{
-     margin-top: 3em;
+     margin-top: 7em;
  }
 
 .info h4,
 .info ul,
 .info p{
     text-align: center;
-    margin: 0 0 1rem 0;
+    color: aliceblue;
 }
 .info ul{
     list-style: none;
+    margin-bottom: 3rem;
 }
 .info h4{
     margin-bottom: 5px;

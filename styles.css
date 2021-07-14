@@ -24,7 +24,7 @@ a{
     grid-template-rows: 20% auto auto auto 15%;
 }
 .header{
-    grid-column: 1 / 6;
+    grid-column: 1 / -1;
     background-color: rgb(150,206,180);
     color: white;
     padding: 1rem 0;
@@ -69,9 +69,9 @@ a{
     background-color: rgb(255,111,105,0.7)
 }
     .contenido-sidebar .titulo{
-    letter-spacing: 15px;
+    letter-spacing: 10px;
     text-align: center;
-    margin: 1em 0;
+    margin: 0.5em 0;
 
     }
     .contenido-sidebar ul{
@@ -97,7 +97,7 @@ a{
         gap: 3px;
         height: 100%;
     }
-        .principal{
+        .principal, .links{
             background-color:  #ffcc5c;
             grid-column: 1/ -1;
         }
@@ -116,7 +116,8 @@ a{
         }
 
 .footer{
-    grid-column: 1/6;
+    margin-top: 0.3em;
+    grid-column: 1/-1;
     background-color: #ffcc5c;
     padding: 20px 25px;
     color: #fff;
@@ -125,4 +126,50 @@ a{
 .footer-container span a{
     color:  #0080ff;
     text-decoration: none;   
+}
+
+
+
+/* enlaces */
+.enlaces{
+    background-color:beige;
+}
+.enlaces ul li, .enlacesotro ul li {
+    list-style: none;
+}
+.enlaces img{
+        margin-top: 5%;
+    width: 80%;
+    height: 80%;
+}
+.enlaces h3, .enlacesotro h3{
+    margin-top: 10%;
+}
+
+/* pantalla chica */
+@media (max-width:800px){
+    body{
+        padding: 0;
+    }
+    .grid-container{
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 8fr;
+    }
+    .header{
+        grid-column: 1/3;
+    }
+    .sidebar{
+       display: none;
+    }
+    .main{
+        grid-column: 1/3;
+    
+    }
+    .footer{
+        grid-column: 1/3;
+
+    }
 }
